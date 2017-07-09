@@ -1,4 +1,4 @@
-{  
+{
     "data": [
         {
             "img": "white-male1",
@@ -13,7 +13,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -31,7 +36,12 @@
                 "self-aware",
                 "rational",
                 "old",
-				"short"
+                "short",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -48,17 +58,26 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "old"
+                "old",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
             "img": "chick",
             "tags": [
                 "yellow",
+                "female",
                 "body",
                 "feeling",
                 "communicating",
-                "young"
+                "young",
+                "alive",
+                "breathing",
+                "memory"
             ]
         },
         {
@@ -75,7 +94,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -91,7 +115,13 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "tall",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -108,7 +138,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "old"
+                "old",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -132,7 +167,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -150,7 +190,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "old"
+                "old",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -167,7 +212,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -182,7 +232,12 @@
                 "communicating",
                 "compassionate",
                 "self-aware",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -198,7 +253,12 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "old"
+                "old",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -215,7 +275,11 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "old"
+                "old",
+                "walking",
+                "alive",
+                "breathing",
+                "memory"
             ]
         },
         {
@@ -229,7 +293,10 @@
                 "happy",
                 "communicating",
                 "compassionate",
-                "old"
+                "old",
+                "alive",
+                "breathing",
+                "memory"
             ]
         },
         {
@@ -250,7 +317,12 @@
                 "communicating",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -267,7 +339,11 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking"
             ]
         },
         {
@@ -279,7 +355,10 @@
                 "feeling",
                 "communicating",
                 "compassionate",
-                "young"
+                "young",
+                "alive",
+                "breathing",
+                "memory"
             ]
         },
         {
@@ -293,7 +372,12 @@
                 "communicating",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -308,7 +392,10 @@
                 "communicating",
                 "compassionate",
                 "self-aware",
-                "young"
+                "young",
+                "alive",
+                "breathing",
+                "memory"
             ]
         },
         {
@@ -323,7 +410,12 @@
                 "communicating",
                 "compassionate",
                 "self-aware",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -340,7 +432,11 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "old"
+                "old",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
             ]
         },
         {
@@ -357,11 +453,22 @@
                 "compassionate",
                 "self-aware",
                 "rational",
-                "young"
+                "young",
+                "walking",
+                "alive",
+                "breathing",
+                "talking",
+                "memory"
+            ]
+        },
+        {
+            "img": "stone",
+            "tags": [
+                "old"
             ]
         }
     ],
-    
+
     "tags": [
         "male",
         "female",
@@ -373,8 +480,8 @@
         "brown",
         "body",
         "loving",
+        "heterosexual",
         "homosexual",
-        "straight",
         "bisexual",
         "feeling",
         "happy",
@@ -383,6 +490,11 @@
         "self-aware",
         "rational",
         "young",
-        "old"
+        "old",
+        "walking",
+        "alive",
+        "breathing",
+        "talking",
+        "memory"
     ]
 }
