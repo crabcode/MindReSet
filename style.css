@@ -8,13 +8,7 @@ body, html {
     width: 100%;
 }
 
-#intro-wrapper {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-
-#intro-wrapper .intro-letter {
+#intro-wrapper div {
     font-size: 32vh;
     height: 48vh;
     left: 50%;
@@ -23,15 +17,6 @@ body, html {
     text-align: center;
     top: 50%;
     width: 18vh;
-}
-
-#intro-wrapper #intro-line {
-    display: table-cell;
-    font-size: 4em;
-    text-align: center;
-    top: 50%;
-    vertical-align: middle;
-    width: 100%;
 }
 
 #intro-wrapper #intro-l1 {
@@ -72,9 +57,8 @@ body, html {
     display: inline-block;
 }
 
-#search-button {
+#results-page #search-container #search-bar #search-button {
     background-color: #6cf;
-    border: 1px solid #3ac;
     border-radius: 3pt;
     color: #fff;
     font-size: 25pt;
@@ -97,19 +81,8 @@ body, html {
     font-weight: bold;
     margin: 0;
     text-align: center;
+    text-transform: uppercase;
     width: 120px;
-}
-
-#results-page #search-string {
-    font-size: 1.8em;
-    padding: 5px 10px;
-    text-align: left;
-    overflow: hidden;
-    width: 600px;
-}
-
-#results-page #search-string-user {
-    color: #000;
 }
 
 #search-page #search-container {
@@ -123,8 +96,14 @@ body, html {
 }
 
 #search-page #search-container #search-bar #search-button {
+    background-color: #6cf;
+    border-radius: 3pt;
+    color: #fff;
     display: block;
+    font-size: 25pt;
     margin: 25px auto;
+    padding: 5px 10px;
+    width: 150px;
 }
 
 #search-page #search-container #search-bar #search-box {
@@ -136,11 +115,46 @@ body, html {
 
 #search-page #search-container #search-title {
     font-size: 4em;
+    font-weight: bold;
     line-height: 2;
+    text-transform: uppercase;
 }
 
 #search-page #search-error {
     color: #f00;
     margin: 10px;
     text-align: right;
+}
+
+.dropdown-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  border-top: 1px solid #ddd;
+  padding: 2px 5px;
+  margin: 0;
+}
+
+.dropdown-menu li:first-child {
+  border-top: none;
+}
+
+.dropdown-menu li:hover,
+.dropdown-menu .active {
+  background-color: rgb(110, 183, 219);
+}
+
+.dropdown-menu a {
+  height: 18px;
+  text-decoration: none;
+  color: #555;
+}
+
+.dropdown-menu a:hover {
+  cursor: pointer;
 }
