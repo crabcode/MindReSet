@@ -28,12 +28,13 @@ body, html {
 }
 
 #load-icon {
-    height: 32px;
+    height: 256px;
     left: 50%;
-    margin: -16px;
+    margin: -128px;
     position: absolute;
     top: 50%;
-    width: 32px;
+    width: 256px;
+    image-rendering: pixelated;
 }
 
 #results-page .result {
