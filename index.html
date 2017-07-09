@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>AVA v0.17.6-9</title>
+        <meta charset="utf-8"/>
+        
+        <link href="style.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    </head>
+    
+    <body>
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script type="text/javascript">window.createjs || document.write("<script type=\"text\/javascript\" src=\"js\/createjs-2015.11.26.min.js\"><\/script>");</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">window.jQuery || document.write("<script type=\"text\/javascript\" src=\"js\/jquery.min.js\"><\/script>");</script>
+        
+        <script type="text/javascript" src="js/jsep.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+        <script type="text/javascript">
+            window.onload = function onload()
+            {
+                var game = new Game();
+            }
+        </script>
+        
+        <!-- GAME CONTENT -->
+        <img id="load-icon" src="img/logo1.gif"/>
+        
+        <div class="page" id="search-page" style="display:none;">
+            <div id="search-container">
+                <div id="search-title">
+                    What is a human?
+                </div>
+                
+                <div id="search-bar">
+                    <input id="search-box" type="text"/>
+                    <input id="search-button" type="button" value="Run"/>
+                    <div id="search-error"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page" id="results-page" style="display:none;">
+            <div id="search-container">
+                <div id="search-bar">
+                    <div id="search-title">
+                        A V A
+                    </div>
+                    <div id="search-string">Matching <span id="search-string-user"></span></div>
+                    <input id="search-button" type="button" value="Edit"/>
+                </div>
+            </div>
+            
+            <div id="results-container">
+                
+            </div>
+        </div>
+        
+        <!-- GAME CONTENT -->
+    </body>
+</html>

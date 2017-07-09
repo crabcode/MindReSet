@@ -1,0 +1,387 @@
+{  
+    "data": [
+        {
+            "img": "white-male1",
+            "tags": [
+                "male",
+                "white",
+                "homosexual",
+                "body",
+                "loving",
+                "feeling",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "yellow-female1",
+            "tags": [
+                "female",
+                "yellow",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "white-female1",
+            "tags": [
+                "female",
+                "white",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "chick",
+            "tags": [
+                "yellow",
+                "body",
+                "feeling",
+                "communicating",
+                "young"
+            ]
+        },
+        {
+            "img": "yellow-male1",
+            "tags": [
+                "male",
+                "yellow",
+                "bisexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "black-female1-tall",
+            "tags": [
+                "female",
+                "black",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "brown-female1",
+            "tags": [
+                "female",
+                "brown",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "chocolate",
+            "tags": [
+                "brown"
+            ]
+        },
+        {
+            "img": "black-male1",
+            "tags": [
+                "male",
+                "black",
+                "short",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "brown-male1",
+            "tags": [
+                "male",
+                "brown",
+                "tall",
+                "homosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "yellow-female2",
+            "tags": [
+                "female",
+                "yellow",
+                "homosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "brown-male2",
+            "tags": [
+                "male",
+                "brown",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "young"
+            ]
+        },
+        {
+            "img": "black-female2",
+            "tags": [
+                "female",
+                "black",
+                "bisexual",
+                "body",
+                "loving",
+                "feeling",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "white-male2",
+            "tags": [
+                "male",
+                "white",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "puppy1",
+            "tags": [
+                "male",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "old"
+            ]
+        },
+        {
+            "img": "mannequin",
+            "tags": [
+                "white",
+                "body"
+            ]
+        },
+        {
+            "img": "yellow-male2",
+            "tags": [
+                "male",
+                "yellow",
+                "heterosexual",
+                "body",
+                "feeling",
+                "communicating",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "white-female2",
+            "tags": [
+                "female",
+                "white",
+                "homosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "cat1",
+            "tags": [
+                "female",
+                "body",
+                "loving",
+                "feeling",
+                "communicating",
+                "compassionate",
+                "young"
+            ]
+        },
+        {
+            "img": "white-female3",
+            "tags": [
+                "female",
+                "white",
+                "heterosexual",
+                "body",
+                "feeling",
+                "communicating",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        },
+        {
+            "img": "ape1",
+            "tags": [
+                "female",
+                "body",
+                "heterosexual",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "young"
+            ]
+        },
+        {
+            "img": "white-male3",
+            "tags": [
+                "male",
+                "white",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "young"
+            ]
+        },
+        {
+            "img": "black-female3",
+            "tags": [
+                "female",
+                "black",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "old"
+            ]
+        },
+        {
+            "img": "yellow-male3",
+            "tags": [
+                "male",
+                "yellow",
+                "heterosexual",
+                "body",
+                "loving",
+                "feeling",
+                "happy",
+                "communicating",
+                "compassionate",
+                "self-aware",
+                "rational",
+                "young"
+            ]
+        }
+    ],
+    
+    "tags": [
+        "male",
+        "female",
+        "white",
+        "yellow",
+        "black",
+        "tall",
+        "short",
+        "brown",
+        "body",
+        "loving",
+        "homosexual",
+        "straight",
+        "bisexual",
+        "feeling",
+        "happy",
+        "communicating",
+        "compassionate",
+        "self-aware",
+        "rational",
+        "young",
+        "old"
+    ]
+}
