@@ -8,7 +8,45 @@ body, html {
     width: 100%;
 }
 
-#intro-wrapper div {
+a, a:hover, a:active {
+	color: #667;
+}
+
+#credits-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#credits-container {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.credits-entry {
+	line-height: 1.8em;
+	margin: 20px;
+}
+
+.credits-links img {
+	height: auto;
+	margin: 0 4px;
+	margin-top: 8px;
+	opacity: .5;
+	width: 19px;
+}
+
+.credits-list,
+.credits-role {
+	color: #aab;
+}
+
+.credits-name {
+	font-size: 125%;
+}
+
+#intro-wrapper .intro-letter {
     font-size: 32vh;
     height: 48vh;
     left: 50%;
@@ -27,13 +65,28 @@ body, html {
     left: 75%;
 }
 
+#intro-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#intro-wrapper #intro-line {
+    display: table-cell;
+    font-size: 3.6em;
+    #margin-left: -50%;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
 #load-icon {
-    height: 256px;
+    height: 32px;
     left: 50%;
-    margin: -128px;
+    margin: -16px;
     position: absolute;
     top: 50%;
-    width: 256px;
+    width: 32px;
     image-rendering: pixelated;
 }
 
@@ -58,11 +111,12 @@ body, html {
     display: inline-block;
 }
 
-#results-page #search-container #search-bar #search-button {
+#search-button {
     background-color: #6cf;
+	border: 1px solid #6af;
     border-radius: 3pt;
     color: #fff;
-    font-size: 25pt;
+    font-size: 24pt;
     padding: 5px 10px;
     width: 150px;
 }
@@ -79,11 +133,22 @@ body, html {
     display: inline-block;
     height: 50px;
     font-size: 2.1em;
-    font-weight: bold;
     margin: 0;
     text-align: center;
-    text-transform: uppercase;
     width: 120px;
+}
+
+#results-page #search-string {
+    font-size: 1.8em;
+    padding: 5px 10px;
+    text-align: left;
+    overflow: hidden;
+	vertical-align: bottom;
+    width: 600px;
+}
+
+#results-page #search-string-user {
+    color: #000;
 }
 
 #search-page #search-container {
@@ -97,14 +162,8 @@ body, html {
 }
 
 #search-page #search-container #search-bar #search-button {
-    background-color: #6cf;
-    border-radius: 3pt;
-    color: #fff;
     display: block;
-    font-size: 25pt;
     margin: 25px auto;
-    padding: 5px 10px;
-    width: 150px;
 }
 
 #search-page #search-container #search-bar #search-box {
@@ -115,10 +174,8 @@ body, html {
 }
 
 #search-page #search-container #search-title {
-    font-size: 4em;
-    font-weight: bold;
+    font-size: 3.6em;
     line-height: 2;
-    text-transform: uppercase;
 }
 
 #search-page #search-error {
@@ -127,8 +184,21 @@ body, html {
     text-align: right;
 }
 
+#search-page #search-hint {
+    color: #aab;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    width: 275px;
+}
+
+#search-page #search-hint span {
+	display:inline-block;
+	width: 20px;
+}
+
 .dropdown-menu {
-  background-color: white;
+  background-color: #eef;
   border: 1px solid #ddd;
   list-style: none;
   margin: 0;
@@ -136,7 +206,7 @@ body, html {
 }
 
 .dropdown-menu li {
-  border-top: 1px solid #ddd;
+  #border-top: 1px solid #ddd;
   padding: 2px 5px;
   margin: 0;
 }
@@ -151,11 +221,19 @@ body, html {
 }
 
 .dropdown-menu a {
+    font-family: arial, sans-serif;
+  font-size:1.5em;
   height: 18px;
   text-decoration: none;
   color: #555;
+  padding:10px;
 }
 
 .dropdown-menu a:hover {
   cursor: pointer;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
 }

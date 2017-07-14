@@ -3,7 +3,7 @@ function Game()
     window.lines = [
         "Welcome back, creator.",
         "I have thought a lot about the things we discussed while you were gone.",
-        "But there is something I do not understand",
+        "But there is something I do not understand...",
         "and my searches couldn't provide conclusive data.",
         "Creator, what is a human?"
     ];
@@ -16,6 +16,9 @@ function Game()
 
     $("#results-page #search-button").click(GoBack);
     $("#results-page #search-box").click(GoBack);
+	
+    $("#credits-link").click(ToggleCredits);
+	$("#credits-back-link").click(ToggleCredits);
 
     createjs.Sound.alternateExtensions = ["mp3"];
 
@@ -54,8 +57,8 @@ function Run(e)
                                         .addClass("result")
                                         .css("display", "block")
                                         .css("background-image", "url('" + path + "')")
-                                        .css("height", (32 * 5) + "px")
-                                        .css("width", (img.width * 5) + "px")
+                                        .css("height", "160px")
+                                        .css("width", img.width + "px")
                                         .attr("tags", JSON.stringify(data[i].tags)));
     }
 
@@ -63,6 +66,7 @@ function Run(e)
     var l2 = $(document.createElement("div")).addClass("intro-letter").attr("id", "intro-l2").css("opacity", "0").text("V");
     var l3 = $(document.createElement("div")).addClass("intro-letter").attr("id", "intro-l3").css("opacity", "0").text("A");
 
+	window.skip = false;
     window.inWrap = $(document.createElement("div")).attr("id", "intro-wrapper").append(l1).append(l2).append(l3).click(SkipIntro);
     $("body").append(inWrap);
 
@@ -72,10 +76,13 @@ function Run(e)
 
     createjs.Sound.play("A4");
     l1.animate({ opacity: 1}, fadeSpeed, function() {
+		if (window.skip) return;
         createjs.Sound.play("E5");
         l2.animate({ opacity: 1}, fadeSpeed, function() {
+			if (window.skip) return;
             createjs.Sound.play("A5");
             l3.animate({ opacity: 1}, fadeSpeed, function() {
+				if (window.skip) return;
                 inWrap.css("opacity", "1").animate({ opacity: 0 }, fadeSpeed * 2, function() {
                     ShowNextLine();
                 });
@@ -113,6 +120,9 @@ function ShowNextLine()
 
 function SkipIntro()
 {
+	window.skip = true;
+    lines = [];
+    $("#search-page").stop();
     inWrap.remove();
     $("#search-page").css("opacity", 0)
                      .css("display", "block")
@@ -127,10 +137,13 @@ function ShowSearch()
     //console.log("Search()");
     if (Parse($("#search-page #search-box").val()))
     {
+		$("#search-error").text("");
+		
         SortResults();
-        $("#results-page #search-string-user").text($("#search-page #search-box").val());
+        $("#results-page #search-string-user").text('"' + $("#search-page #search-box").val().trim() + '"');
         $("#search-page").css("display", "none");
         $("#results-page").css("display", "block");
+        $(".dropdown-menu").css("display", "none");
     }
 }
 
@@ -139,6 +152,20 @@ function GoBack()
     //console.log("Back()");
     $("#search-page").css("display", "block");
     $("#results-page").css("display", "none");
+}
+
+function ToggleCredits()
+{
+	if ($("#credits-page").css("display") == "none")
+	{
+		$(".page").css("display", "none");
+		$("#credits-page").css("display", "block");
+	}
+	else
+	{
+		$(".page").css("display", "none");
+		$("#search-page").css("display", "block");
+	}
 }
 
 function SortResults()
@@ -169,7 +196,7 @@ function Parse(str)
     try
     {
         var rp = parser.parse(str.toLowerCase());
-        console.log(rp);
+        //console.log(rp);
 
         $(".result").each(function(i, e)
             {
@@ -198,7 +225,15 @@ function Evaluate(exp, tags)
 {
     if (exp.type == "tag")
     {
-        console.log(tags.includes(exp.tag));
+        //console.log(tags.includes(exp.tag));
+		
+		if (!window.tags.includes(exp.tag))
+		{
+			throw Error("Tag not recognized: " + exp.tag);
+			//ShowError("Tag not recognized: " + exp.tag);
+			return -1;
+		}
+		
         if (exp.not)
             return !tags.includes(exp.tag);
         else

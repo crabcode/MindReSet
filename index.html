@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>AVA v0.17.6-9</title>
+        <title>AVA v0.17.7-9</title>
         <meta charset="utf-8"/>
 
         <link href="style.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
             window.onload = function onload()
             {
                 var strategy = {
-                  match: /(^|\s)(\w{3,})$/,
+                  match: /(^|\s)(\w{1,})$/,
                   search: function (term, callback) {
                     callback(tags.filter(function (name) {
                       return name.startsWith(term);
@@ -44,7 +44,7 @@
 
                  var game = new Game();
             }
-        </script>
+        </script> 
 
         <!-- GAME CONTENT -->
         <img id="load-icon" src="img/logo1.gif"/>
@@ -60,6 +60,18 @@
                     <input id="search-button" type="button" value="Run"/>
                     <div id="search-error"></div>
                 </div>
+                
+                <div id="search-hint">
+                    <p><span>and</span> - Must contain both properties<br/>
+                    <span>or</span> - Must contain at least one property<br/>
+                    <span>not</span> - Must not contain property<br/>
+                    <span>()</span> - Expressions in parentheses are evaluated first</p>
+					<p>Example: (male or female) and (not short)</p>
+                </div>
+				
+				<div id="credits">
+					<a href="#" id="credits-link">Creators</a>
+				</div>
             </div>
         </div>
 
@@ -78,7 +90,56 @@
 
             </div>
         </div>
+		
+		<div class="page" id="credits-page" style="display:none;">
+			<div id="credits-wrapper">
+				<div id="credits-container">
+					<div class="credits-entry">
+						<div class="credits-name">Crabman</div>
+						<div class="credits-role">Game Design, Programming</div>
+						<div class="credits-links">
+							<a href="https://hypnoticowl.com/" target="_blank"><img src="img/link-url.png"/></a>
+							<a href="https://twitter.com/elCrabman" target="_blank"><img src="img/link-twitter.png"/></a>
+						</div>
+					</div>
 
+					<div class="credits-entry">
+						<div class="credits-name">Koltes</div>
+						<div class="credits-role">Art, Game Design, Additional Programming</div>
+						<div class="credits-links">
+							<a href="http://koltes.digital/" target="_blank"><img src="img/link-url.png"/></a>
+							<a href="https://twitter.com/KoltesDigital" target="_blank"><img src="img/link-twitter.png"/></a>
+						</div>
+					</div>
+
+					<div class="credits-entry">
+						<div class="credits-name">jooice</div>
+						<div class="credits-role">Game Design, Research, Scripting</div>
+					</div>
+
+					<div class="credits-entry">
+						<div class="credits-name">monstar</div>
+						<div class="credits-role">Additional Game Design</div>
+						<div class="credits-links">
+							<a href="http://starsoft.or.kr/" target="_blank"><img src="img/link-url.png"/></a>
+							<a href="http://fb.com/tmon70" target="_blank"><img src="img/link-fb.png"/></a>
+						</div>
+					</div>
+
+					<div class="credits-entry">
+						<div class="credits-name">Special Thanks to</div>
+						<div class="credits-list">
+							Goethe-Institut Korea<br/>
+							CRI/Gamelab<br/>
+							Seoul Indies<br/>
+							Stiftung Digitale Spielekultur
+						</div>
+					</div>
+			
+					<a href="#" id="credits-back-link">Back</a>
+				</div>
+			</div>
+		</div>
         <!-- GAME CONTENT -->
     </body>
 </html>
