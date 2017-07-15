@@ -46,6 +46,10 @@ a, a:hover, a:active {
 	font-size: 125%;
 }
 
+.credits-thanks {
+	margin-top: 25px;
+}
+
 #intro-wrapper .intro-letter {
     font-size: 32vh;
     height: 48vh;
@@ -111,44 +115,39 @@ a, a:hover, a:active {
     display: inline-block;
 }
 
-#search-button {
-    background-color: #6cf;
-	border: 1px solid #6af;
-    border-radius: 3pt;
-    color: #fff;
-    font-size: 24pt;
-    padding: 5px 10px;
-    width: 150px;
-}
-
-#results-page #search-container #search-bar #search-box {
-    border: 1px solid #eee;
-    border-radius: 3pt;
-    font-size: 25pt;
-    padding: 5px 10px;
-    width: 600px;
-}
-
 #results-page #search-container #search-title {
     display: inline-block;
     height: 50px;
     font-size: 2.1em;
     margin: 0;
     text-align: center;
+	vertical-align: top;
     width: 120px;
 }
 
 #results-page #search-string {
     font-size: 1.8em;
+	#height: 40px;
     padding: 5px 10px;
-    text-align: left;
     overflow: hidden;
+    text-align: left;
 	vertical-align: bottom;
     width: 600px;
 }
 
 #results-page #search-string-user {
     color: #000;
+}
+
+#search-button {
+    background-color: #6cf;
+	border: 1px solid #6af;
+    border-radius: 3pt;
+    color: #fff;
+    font-size: 24pt;
+    padding: 4px 8px;
+	vertical-align: top;
+    width: 140px;
 }
 
 #search-page #search-container {
