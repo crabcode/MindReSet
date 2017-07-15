@@ -1,4 +1,5 @@
 body, html {
+	background-color: #fff;
     color: #6cf;
     font-family: arial, sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -42,12 +43,12 @@ a, a:hover, a:active {
 	color: #aab;
 }
 
-.credits-name {
-	font-size: 125%;
+.credits-margin {
+	margin: 25px 0;
 }
 
-.credits-thanks {
-	margin-top: 25px;
+.credits-name {
+	font-size: 125%;
 }
 
 #intro-wrapper .intro-letter {
@@ -98,11 +99,17 @@ a, a:hover, a:active {
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    float:left;
-    #filter: grayscale(1);
-    image-rendering: pixelated;
     display: inline-block;
+    float:left;
+    filter: grayscale(0);
+    image-rendering: pixelated;
+	opacity: 1;
     margin: 10px;
+}
+
+#results-page .result.inactive {
+	filter: grayscale(1);
+	opacity: .666;
 }
 
 #results-page #search-container {

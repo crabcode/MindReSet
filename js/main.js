@@ -205,9 +205,9 @@ function Parse(str)
                 if ((r = Evaluate(rp, JSON.parse($(e).attr("tags")))) < 0)
                     return false;
                 else if (r)
-                    $(e).css("filter", "grayscale(0)").attr("active", 1);
+                    $(e).removeClass("inactive").attr("active", 1);
                 else
-                    $(e).css("filter", "grayscale(1)").attr("active", 0);
+                    $(e).addClass("inactive").attr("active", 0);
             }
         );
 
