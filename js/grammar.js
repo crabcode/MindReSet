@@ -612,7 +612,7 @@ case 8:return "INVALID"
 break;
 }
 },
-rules: [/^(?:\s+)/,/^(?:and\b)/,/^(?:or\b)/,/^(?:not\b)/,/^(?:[a-zA-Z0-9]+)/,/^(?:\()/,/^(?:\))/,/^(?:$)/,/^(?:.)/],
+rules: [/^(?:\s+)/,/^(?:and\b)/,/^(?:or\b)/,/^(?:not\b)/,/^(?:[a-zA-Z0-9\-]+)/,/^(?:\()/,/^(?:\))/,/^(?:$)/,/^(?:.)/],
 conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8],"inclusive":true}}
 });
 return lexer;

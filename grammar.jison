@@ -6,7 +6,7 @@
 "and"          return "AND"
 "or"           return "OR"
 "not"          return "NOT"
-[a-zA-Z0-9]+   return "TAG"
+[a-zA-Z0-9\-]+ return "TAG"
 "("            return "("
 ")"            return ")"
 <<EOF>>        return "EOF"
