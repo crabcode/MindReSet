@@ -115,6 +115,7 @@ function ShowNextLine()
         $("#search-page").css("opacity", 0)
                          .css("display", "block")
                          .animate({ opacity: 1 }, 500);
+        $("#search-page #search-box").focus();
     }
 }
 
@@ -127,6 +128,7 @@ function SkipIntro()
     $("#search-page").css("opacity", 0)
                      .css("display", "block")
                      .animate({ opacity: 1 }, 500);
+    $("#search-page #search-box").focus();
 }
 
 /**
@@ -152,6 +154,7 @@ function GoBack()
     //console.log("Back()");
     $("#search-page").css("display", "block");
     $("#results-page").css("display", "none");
+    $("#search-page #search-box").focus();
 }
 
 function ToggleCredits()
