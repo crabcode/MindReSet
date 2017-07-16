@@ -86,13 +86,12 @@ a, a:hover, a:active {
 }
 
 #load-icon {
-    height: 32px;
+    height: 160px;
     left: 50%;
-    margin: -16px;
+    margin: -80px;
     position: absolute;
     top: 50%;
-    width: 32px;
-    image-rendering: pixelated;
+    width: 160px;
 }
 
 #results-page .result {
@@ -102,7 +101,6 @@ a, a:hover, a:active {
     display: inline-block;
     float:left;
     filter: grayscale(0);
-    image-rendering: pixelated;
 	opacity: 1;
     margin: 10px;
 }
