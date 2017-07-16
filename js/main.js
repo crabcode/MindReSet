@@ -16,7 +16,7 @@ function Game()
 
     $("#results-page #search-button").click(GoBack);
     $("#results-page #search-box").click(GoBack);
-	
+
     $("#credits-link").click(ToggleCredits);
 	$("#credits-back-link").click(ToggleCredits);
 
@@ -138,7 +138,7 @@ function ShowSearch()
     if (Parse($("#search-page #search-box").val()))
     {
 		$("#search-error").text("");
-		
+
         SortResults();
         $("#results-page #search-string-user").text('"' + $("#search-page #search-box").val().trim() + '"');
         $("#search-page").css("display", "none");
@@ -226,14 +226,21 @@ function Evaluate(exp, tags)
     if (exp.type == "tag")
     {
         //console.log(tags.includes(exp.tag));
-		
+
 		if (!window.tags.includes(exp.tag))
 		{
-			throw Error("Tag not recognized: " + exp.tag);
-			//ShowError("Tag not recognized: " + exp.tag);
+            var msg = "Tag not recognized: " + exp.tag;
+
+            var tags = exp.tag.split(" ");
+            if (tags.length > 1 && tags.some(function(tag) { return window.tags.includes(tag); }))
+            {
+                msg += ", do you mean: " + tags.join(" and ") + "?";
+            }
+
+			throw Error(msg);
 			return -1;
 		}
-		
+
         if (exp.not)
             return !tags.includes(exp.tag);
         else

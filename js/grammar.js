@@ -72,12 +72,12 @@
   }
 */
 var grammar = (function(){
-var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,3],$V1=[1,4],$V2=[1,5],$V3=[1,7],$V4=[1,8],$V5=[5,6,7,10];
+var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[1,3],$V1=[1,4],$V2=[1,6],$V3=[1,8],$V4=[1,9],$V5=[5,6,7,10],$V6=[5,6,7,10,12];
 var parser = {trace: function trace() { },
 yy: {},
-symbols_: {"error":2,"expressions":3,"e":4,"EOF":5,"OR":6,"AND":7,"NOT":8,"(":9,")":10,"TAG":11,"$accept":0,"$end":1},
-terminals_: {2:"error",5:"EOF",6:"OR",7:"AND",8:"NOT",9:"(",10:")",11:"TAG"},
-productions_: [0,[3,2],[4,3],[4,3],[4,2],[4,3],[4,1]],
+symbols_: {"error":2,"expressions":3,"e":4,"EOF":5,"OR":6,"AND":7,"NOT":8,"(":9,")":10,"compound-tag":11,"TAG":12,"$accept":0,"$end":1},
+terminals_: {2:"error",5:"EOF",6:"OR",7:"AND",8:"NOT",9:"(",10:")",12:"TAG"},
+productions_: [0,[3,2],[4,3],[4,3],[4,2],[4,3],[4,1],[11,2],[11,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
 /* this == yyval */
 
@@ -87,10 +87,10 @@ case 1:
  return $$[$0-1]; 
 break;
 case 2:
-this.$ = {type: 'or', left: $$[$0-2], right: $$[$0]};
+ this.$ = {type: "or", left: $$[$0-2], right: $$[$0]}; 
 break;
 case 3:
-this.$ = {type: 'and', left: $$[$0-2], right: $$[$0]};
+ this.$ = {type: "and", left: $$[$0-2], right: $$[$0]}; 
 break;
 case 4:
 
@@ -99,15 +99,21 @@ case 4:
         
 break;
 case 5:
-this.$ = $$[$0-1];
+ this.$ = $$[$0-1]; 
 break;
 case 6:
-this.$ = {type: 'tag', tag: yytext};
+ this.$ = {type: "tag", tag: $$[$0]}; 
+break;
+case 7:
+ this.$ = $$[$0-1] + " " + $$[$0]; 
+break;
+case 8:
+ this.$ = $$[$0]; 
 break;
 }
 },
-table: [{3:1,4:2,8:$V0,9:$V1,11:$V2},{1:[3]},{5:[1,6],6:$V3,7:$V4},{4:9,8:$V0,9:$V1,11:$V2},{4:10,8:$V0,9:$V1,11:$V2},o($V5,[2,6]),{1:[2,1]},{4:11,8:$V0,9:$V1,11:$V2},{4:12,8:$V0,9:$V1,11:$V2},o($V5,[2,4]),{6:$V3,7:$V4,10:[1,13]},o([5,6,10],[2,2],{7:$V4}),o($V5,[2,3]),o($V5,[2,5])],
-defaultActions: {6:[2,1]},
+table: [{3:1,4:2,8:$V0,9:$V1,11:5,12:$V2},{1:[3]},{5:[1,7],6:$V3,7:$V4},{4:10,8:$V0,9:$V1,11:5,12:$V2},{4:11,8:$V0,9:$V1,11:5,12:$V2},o($V5,[2,6],{12:[1,12]}),o($V6,[2,8]),{1:[2,1]},{4:13,8:$V0,9:$V1,11:5,12:$V2},{4:14,8:$V0,9:$V1,11:5,12:$V2},o($V5,[2,4]),{6:$V3,7:$V4,10:[1,15]},o($V6,[2,7]),o([5,6,10],[2,2],{7:$V4}),o($V5,[2,3]),o($V5,[2,5])],
+defaultActions: {7:[2,1]},
 parseError: function parseError(str, hash) {
     if (hash.recoverable) {
         this.trace(str);
@@ -588,21 +594,21 @@ var YYSTATE=YY_START;
 switch($avoiding_name_collisions) {
 case 0:/* skip whitespace */
 break;
-case 1:return 7
+case 1:return "AND"
 break;
-case 2:return 6
+case 2:return "OR"
 break;
-case 3:return 8
+case 3:return "NOT"
 break;
-case 4:return 11
+case 4:return "TAG"
 break;
-case 5:return 9
+case 5:return "("
 break;
-case 6:return 10
+case 6:return ")"
 break;
-case 7:return 5
+case 7:return "EOF"
 break;
-case 8:return 'INVALID'
+case 8:return "INVALID"
 break;
 }
 },
